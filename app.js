@@ -102,6 +102,7 @@ function renderFeaturedProduct() {
 }
 
 function discountOf(product) {
+  if (!(product.oldPrice > product.price && product.price > 0)) return 0;
   return Math.round((1 - product.price / product.oldPrice) * 100);
 }
 
@@ -122,11 +123,14 @@ function localPageUrl(path) {
 function productCard(product) {
   const favorite = state.favorites.has(product.id);
   const detailUrl = localPageUrl(product.detailUrl);
+  const discount = discountOf(product);
+  const price = product.price > 0 ? money.format(product.price) : "Consulte o preço";
+  const oldPrice = product.oldPrice > product.price && product.price > 0 ? `<del>${money.format(product.oldPrice)}</del>` : "";
   return `
     <article class="product-card">
       <div class="product-media">
         <a href="${detailUrl}" aria-label="Ver detalhes de ${product.name}"><img src="${product.image}" alt="${product.name}" loading="lazy" width="700" height="500" /></a>
-        <span class="discount-badge">-${discountOf(product)}%</span>
+        ${discount ? `<span class="discount-badge">-${discount}%</span>` : ""}
         <button class="heart-button ${favorite ? "selected" : ""}" type="button" data-favorite="${product.id}" aria-label="${favorite ? "Remover dos" : "Adicionar aos"} favoritos">
           <svg><use href="#icon-heart" /></svg>
         </button>
@@ -142,7 +146,7 @@ function productCard(product) {
       </div>
       <div class="product-buy">
         <span class="store store-${product.storeClass}">${product.store}</span>
-        <div class="price-row"><strong>${money.format(product.price)}</strong><del>${money.format(product.oldPrice)}</del></div>
+        <div class="price-row"><strong>${price}</strong>${oldPrice}</div>
         <small>${product.installment}</small>
         <a class="button button-green" href="${product.url}" target="_blank" rel="noopener sponsored">Ver oferta <svg><use href="#icon-external" /></svg></a>
       </div>
@@ -158,7 +162,7 @@ function visibleProducts() {
 
   return items.sort((a, b) => {
     if (state.sort === "discount") return discountOf(b) - discountOf(a);
-    if (state.sort === "lowest") return a.price - b.price;
+    if (state.sort === "lowest") return (a.price || Number.POSITIVE_INFINITY) - (b.price || Number.POSITIVE_INFINITY);
     if (state.sort === "recent") return new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
     return new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
   });

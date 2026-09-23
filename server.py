@@ -94,6 +94,13 @@ def product_page(product):
     display_price = format_brl(price)
     display_old_price = format_brl(old_price)
     discount = round((1 - price / old_price) * 100) if old_price > price > 0 else 0
+    discount_badge = f'<span class="discount-badge">-{discount}%</span>' if discount else ""
+    old_price_html = f'<del>R$ {display_old_price}</del>' if old_price > price > 0 else ""
+    price_html = f'R$ {display_price}' if price > 0 else "Consulte o preço"
+    price_meta = f'<meta property="product:price:amount" content="{price:.2f}"><meta property="product:price:currency" content="BRL">' if price > 0 else ""
+    offer_schema = {"@type": "Offer", "url": item.get("url"), "seller": {"@type": "Organization", "name": item.get("store")}}
+    if price > 0:
+        offer_schema.update({"priceCurrency": "BRL", "price": f"{price:.2f}"})
     published = item.get("publishedAt") or datetime.now(timezone.utc).isoformat()
     structured = {
         "@context": "https://schema.org",
@@ -114,13 +121,7 @@ def product_page(product):
                 "image": [item.get("image")],
                 "category": item.get("category"),
                 "sku": str(item.get("id")),
-                "offers": {
-                    "@type": "Offer",
-                    "url": item.get("url"),
-                    "priceCurrency": "BRL",
-                    "price": f"{price:.2f}",
-                    "seller": {"@type": "Organization", "name": item.get("store")},
-                },
+                "offers": offer_schema,
             },
         ],
     }
@@ -133,7 +134,7 @@ def product_page(product):
 <meta property="og:type" content="product"><meta property="og:locale" content="pt_BR"><meta property="og:site_name" content="WiseOff">
 <meta property="og:title" content="{seo_title} em oferta | WiseOff"><meta property="og:description" content="{seo_description}">
 <meta property="og:url" content="{canonical}"><meta property="og:image" content="{image}"><meta property="og:image:alt" content="{name}">
-<meta property="product:price:amount" content="{price:.2f}"><meta property="product:price:currency" content="BRL">
+{price_meta}
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{seo_title} em oferta | WiseOff"><meta name="twitter:description" content="{seo_description}"><meta name="twitter:image" content="{image}">
 <title>{seo_title} em oferta | WiseOff</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">
@@ -143,9 +144,9 @@ def product_page(product):
 <main class="detail-main shell">
 <nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="/">Início</a><span>›</span><a href="/#ofertas">{category or 'Ofertas'}</a><span>›</span><span>{name}</span></nav>
 <article class="detail-card">
-<div class="detail-media"><img src="{image}" alt="{name}" width="720" height="720"><span class="discount-badge">-{discount}%</span></div>
+<div class="detail-media"><img src="{image}" alt="{name}" width="720" height="720">{discount_badge}</div>
 <div class="detail-copy"><span class="category-pill">{category}</span><h1>{name}</h1><p>{description}</p><div class="detail-store">Oferta encontrada na <strong>{store}</strong></div>
-<div class="detail-price"><strong>R$ {display_price}</strong><del>R$ {display_old_price}</del></div><small>{page_escape(item.get('installment'))}</small>
+<div class="detail-price"><strong>{price_html}</strong>{old_price_html}</div><small>{page_escape(item.get('installment'))}</small>
 <a class="button button-green" href="{offer_url}" target="_blank" rel="noopener sponsored nofollow">Ver oferta na {store} →</a>
 <p class="affiliate-note">O preço pode mudar a qualquer momento. Confirme as condições no site da loja.</p></div>
 </article>
