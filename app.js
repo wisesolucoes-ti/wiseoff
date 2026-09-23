@@ -1,7 +1,7 @@
 const state = {
   category: "Todos",
   query: "",
-  sort: "featured",
+  sort: "recent",
   favoritesOnly: false,
   favorites: new Set(JSON.parse(localStorage.getItem("wiseoff-favorites") || "[]"))
 };
@@ -159,8 +159,8 @@ function visibleProducts() {
   return items.sort((a, b) => {
     if (state.sort === "discount") return discountOf(b) - discountOf(a);
     if (state.sort === "lowest") return a.price - b.price;
-    if (state.sort === "recent") return new Date(b.publishedAt) - new Date(a.publishedAt);
-    return a.id - b.id;
+    if (state.sort === "recent") return new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
+    return new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
   });
 }
 
