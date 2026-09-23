@@ -1,0 +1,13 @@
+{
+  "name": "WiseOff — Ofertas que valem a pena",
+  "short_name": "WiseOff",
+  "description": "Ofertas verificadas, descontos reais e boas escolhas.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#087a4b",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encontre ofertas verificadas, descontos reais e produtos selecionados nas principais lojas do Brasil. Economize com a curadoria independente da WiseOff." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="WiseOff" />
+    <link rel="canonical" href="https://wiseoff.com.br/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://wiseoff.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="WiseOff" />
+    <meta property="og:title" content="WiseOff — Ofertas que realmente valem a pena" />
+    <meta property="og:description" content="Ofertas verificadas, preços reais e boas escolhas nas principais lojas do Brasil." />
+    <meta property="og:url" content="https://wiseoff.com.br/" />
+    <meta property="og:image" content="https://wiseoff.com.br/Imagens_Base/BaseLayout.png" />
+    <meta property="og:image:alt" content="WiseOff, ofertas que realmente valem a pena" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="WiseOff — Ofertas que realmente valem a pena" />
+    <meta name="twitter:description" content="Ofertas verificadas e preços reais para você economizar." />
+    <meta name="twitter:image" content="https://wiseoff.com.br/Imagens_Base/BaseLayout.png" />
+    <meta name="theme-color" content="#087a4b" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>WiseOff — Ofertas que realmente valem a pena</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://wiseoff.com.br/#organization",
+            "name": "WiseOff",
+            "url": "https://wiseoff.com.br/",
+            "logo": { "@type": "ImageObject", "url": "https://wiseoff.com.br/Imagens_Base/BaseLayout.png" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://wiseoff.com.br/#website",
+            "url": "https://wiseoff.com.br/",
+            "name": "WiseOff",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://wiseoff.com.br/#organization" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": { "@type": "EntryPoint", "urlTemplate": "https://wiseoff.com.br/?q={search_term_string}" },
+              "query-input": "required name=search_term_string"
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-wrap">
+        <a class="brand" href="#" aria-label="WiseOff, página inicial">
+          <span>Wise<span>Off</span></span>
+          <small>Escolha esperta.<br />Preço melhor.</small>
+        </a>
+
+        <label class="top-search" aria-label="Buscar ofertas">
+          <svg aria-hidden="true"><use href="#icon-search" /></svg>
+          <input id="searchInput" type="search" placeholder="Buscar produtos, marcas ou categorias..." autocomplete="off" />
+          <kbd>⌘ K</kbd>
+        </label>
+
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a class="active" href="#ofertas">Ofertas</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="admin.html">Cadastrar</a>
+        </nav>
+
+        <button class="favorites-link" id="favoriteFilter" type="button" aria-label="Mostrar favoritos">
+          <svg><use href="#icon-heart" /></svg>
+          <span>Favoritos</span>
+          <b id="favoriteCount">0</b>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero shell" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> Curadoria independente</span>
+          <h1 id="heroTitle">Oferta boa é aquela que <em>vale a pena.</em></h1>
+          <strong class="hero-featured-name" id="featuredName">As melhores ofertas da internet</strong>
+          <div class="hero-actions">
+            <a class="button button-light" id="featuredLink" href="#ofertas">Explorar ofertas <svg><use href="#icon-arrow" /></svg></a>
+            <span><b>+500 mil</b> pessoas economizando</span>
+          </div>
+        </div>
+        <div class="hero-product" aria-label="Oferta da semana">
+          <div class="hero-badge">Oferta da semana</div>
+          <div class="hero-image-wrap">
+            <img id="featuredImage" src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=760&q=90" alt="Produto em destaque" />
+          </div>
+          <div class="floating-price">
+            <small>a partir de</small>
+            <strong id="featuredPrice">R$ 899</strong>
+            <span id="featuredInstallment">até 10x sem juros</span>
+          </div>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon"><svg><use href="#icon-shield" /></svg></div>
+          <div><strong>Preço verificado</strong><span>Atualizado há 18 min</span></div>
+        </div>
+      </section>
+
+      <section class="trust-strip" id="como-funciona">
+        <div class="shell trust-grid">
+          <div><svg><use href="#icon-check" /></svg><p><strong>Ofertas verificadas</strong><span>Conferidas antes de publicar</span></p></div>
+          <div><svg><use href="#icon-store" /></svg><p><strong>Lojas confiáveis</strong><span>Somente sites conhecidos</span></p></div>
+          <div><svg><use href="#icon-eye" /></svg><p><strong>Conteúdo independente</strong><span>Escolhas sem enrolação</span></p></div>
+          <div><svg><use href="#icon-spark" /></svg><p><strong>Economia de verdade</strong><span>Descontos que fazem sentido</span></p></div>
+        </div>
+      </section>
+
+      <section class="offers shell" id="ofertas">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow dark"><i></i> Achados do dia</span>
+            <h2>Ofertas em destaque</h2>
+            <p>Produtos selecionados e recomendados pela nossa equipe.</p>
+          </div>
+          <div class="results-meta"><b id="resultCount">0</b> ofertas encontradas</div>
+        </div>
+
+        <div class="filters" id="categorias">
+          <div class="category-list" id="categoryList" aria-label="Filtrar por categoria"></div>
+          <label class="sort-control">
+            <span>Ordenar por</span>
+            <select id="sortSelect">
+              <option value="featured">Mais relevantes</option>
+              <option value="discount">Maior desconto</option>
+              <option value="lowest">Menor preço</option>
+              <option value="recent">Mais recentes</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="product-list" id="productList" aria-live="polite" itemscope itemtype="https://schema.org/ItemList"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <svg><use href="#icon-search" /></svg>
+          <h3>Nenhuma oferta por aqui</h3>
+          <p>Tente buscar outro produto ou selecionar uma categoria diferente.</p>
+          <button class="button button-green" id="clearFilters" type="button">Limpar filtros</button>
+        </div>
+      </section>
+
+      <section class="newsletter shell">
+        <div>
+          <span class="eyebrow"><i></i> Sem spam. Só desconto.</span>
+          <h2>As melhores ofertas<br />direto no seu e-mail.</h2>
+        </div>
+        <form id="newsletterForm">
+          <label>
+            <span class="sr-only">Seu melhor e-mail</span>
+            <input type="email" placeholder="Seu melhor e-mail" required />
+          </label>
+          <button class="button button-light" type="submit">Quero economizar <svg><use href="#icon-arrow" /></svg></button>
+          <small>Ao cadastrar, você concorda com nossa Política de Privacidade.</small>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-wrap">
+        <a class="brand footer-brand" href="#"><span>Wise<span>Off</span></span></a>
+        <p>Boas escolhas para você gastar melhor.</p>
+        <nav><a href="#">Sobre</a><a href="#">Contato</a><a href="#">Privacidade</a></nav>
+        <small>© 2026 WiseOff</small>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="icon-store" viewBox="0 0 24 24"><path d="M3 10h18l-2-6H5l-2 6Z"/><path d="M5 10v10h14V10M9 20v-6h6v6M3 10c0 2 3 3 4.5 1 1.5 2 4.5 1 4.5-1 0 2 3 3 4.5 1 1.5 2 4.5 1 4.5-1"/></symbol>
+      <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 1.7 5.3L19 9l-5.3 1.7L12 16l-1.7-5.3L5 9l5.3-1.7L12 2ZM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 4h6v6M10 14 20 4M20 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h5"/></symbol>
+      <symbol id="icon-tag" viewBox="0 0 24 24"><path d="M20 13 13 20l-9-9V4h7l9 9Z"/><circle cx="8.5" cy="8.5" r="1"/></symbol>
+    </svg>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
