@@ -112,9 +112,16 @@ function timeAgo(dateString) {
   return `há ${days} dia${days > 1 ? "s" : ""}`;
 }
 
+function localPageUrl(path) {
+  if (!path || path.startsWith("#")) return path || "#ofertas";
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+  const projectPrefix = window.location.hostname.endsWith(".github.io") ? "/wiseoff" : "";
+  return `${projectPrefix}${normalizedPath}`;
+}
+
 function productCard(product) {
   const favorite = state.favorites.has(product.id);
-  const detailUrl = product.detailUrl || "#ofertas";
+  const detailUrl = localPageUrl(product.detailUrl);
   return `
     <article class="product-card">
       <div class="product-media">
