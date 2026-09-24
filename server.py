@@ -278,7 +278,9 @@ def extract_product(raw_url):
     if not is_public_url(raw_url):
         raise ValueError("Use um endereço público iniciado por http:// ou https://.")
 
-    request = Request(raw_url, headers={"User-Agent": USER_AGENT, "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.7"})
+    original_hostname = urlparse(raw_url).hostname or ""
+    initial_user_agent = "facebookexternalhit/1.1" if original_hostname == "link.amazon" else USER_AGENT
+    request = Request(raw_url, headers={"User-Agent": initial_user_agent, "Accept-Language": "pt-BR,pt;q=0.9,en;q=0.7"})
     with urlopen(request, timeout=15) as response:
         final_url = response.geturl()
         if not is_public_url(final_url):
@@ -291,6 +293,30 @@ def extract_product(raw_url):
             raise ValueError("A página é grande demais para importar.")
         charset = response.headers.get_content_charset() or "utf-8"
         markup = raw.decode(charset, errors="replace")
+
+    if original_hostname == "link.amazon":
+        destination_match = re.search(r"[?&]btn_url=([^&\"'<>\s]+)", html.unescape(markup), re.I)
+        if destination_match:
+            destination_url = unquote(destination_match.group(1))
+            asin_match = re.search(r"/(?:dp|gp/product)/([A-Z0-9]{10})", destination_url, re.I)
+            if is_public_url(destination_url) and asin_match:
+                mobile_url = f"https://www.amazon.com.br/gp/aw/d/{asin_match.group(1).upper()}"
+                mobile_request = Request(
+                    mobile_url,
+                    headers={
+                        "User-Agent": "Mozilla/5.0 (Linux; Android 13; Mobile) AppleWebKit/537.36 Chrome/124 Mobile Safari/537.36",
+                        "Accept-Language": "pt-BR,pt;q=0.9",
+                    },
+                )
+                try:
+                    with urlopen(mobile_request, timeout=15) as mobile_response:
+                        mobile_raw = mobile_response.read(MAX_PAGE_SIZE + 1)
+                        if len(mobile_raw) <= MAX_PAGE_SIZE:
+                            mobile_charset = mobile_response.headers.get_content_charset() or "utf-8"
+                            markup = mobile_raw.decode(mobile_charset, errors="replace")
+                            final_url = destination_url
+                except (HTTPError, URLError, TimeoutError, socket.timeout):
+                    pass
 
     hostname = urlparse(final_url).hostname or ""
     if hostname == "shopee.com.br" or hostname.endswith(".shopee.com.br"):
@@ -318,6 +344,16 @@ def extract_product(raw_url):
     image = image_from(product) or meta_value(markup, "og:image", "twitter:image")
     price = to_number(offer.get("price") or offer.get("lowPrice")) or to_number(meta_value(markup, "product:price:amount", "og:price:amount"))
     old_price = to_number(offer.get("highPrice") or offer.get("listPrice")) or to_number(meta_value(markup, "product:original_price:amount"))
+    if original_hostname == "link.amazon":
+        amazon_title = re.search(r'<span[^>]+id=["\']title["\'][^>]*>(.*?)</span>', markup, re.I | re.S)
+        if amazon_title:
+            name = clean_text(amazon_title.group(1))
+        bullets = re.search(r'<div[^>]+id=["\']feature-bullets["\'][^>]*>(.*?)</div>', markup, re.I | re.S)
+        if bullets:
+            description = truncate(clean_text(bullets.group(1)), 220)
+        amazon_image = re.search(r'<img[^>]+id=["\']main-image["\'][^>]+(?:data-a-hires|src)=["\']([^"\']+)', markup, re.I)
+        if amazon_image:
+            image = html.unescape(amazon_image.group(1))
     if hostname == "shopee.com.br" or hostname.endswith(".shopee.com.br"):
         name = re.sub(r"\s*\|\s*Shopee Brasil\s*$", "", name, flags=re.I)
         description = re.sub(r"[*_`#]+", "", description).strip()
@@ -328,8 +364,7 @@ def extract_product(raw_url):
     if not name:
         raise ValueError("Não foi possível identificar o produto nessa página.")
 
-    original_hostname = urlparse(raw_url).hostname or ""
-    preserved_url = raw_url if original_hostname == "s.shopee.com.br" else final_url
+    preserved_url = raw_url if original_hostname in ("s.shopee.com.br", "link.amazon") else final_url
     return {
         "name": name[:90],
         "description": description[:220],
