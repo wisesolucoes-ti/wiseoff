@@ -371,3 +371,13 @@ footer { border-top: 1px solid var(--line); }
   .detail-copy { padding: 32px 25px; }
   .detail-copy h1 { font-size: 31px; }
 }
+
+/* Consentimento de métricas */
+.consent-banner { position: fixed; right: 22px; bottom: 22px; z-index: 1000; width: min(440px, calc(100% - 32px)); padding: 18px; display: flex; align-items: center; justify-content: space-between; gap: 18px; color: white; background: #10231b; border: 1px solid rgba(255,255,255,.14); border-radius: 14px; box-shadow: 0 18px 45px rgba(0,0,0,.24); }
+.consent-banner p { margin: 0; display: grid; gap: 3px; }
+.consent-banner strong { font-size: 12px; }
+.consent-banner span { color: #c7d4cf; font-size: 10px; line-height: 1.4; }
+.consent-banner > div { display: flex; gap: 7px; flex-shrink: 0; }
+.consent-banner button { padding: 9px 11px; color: #dbe5e1; background: transparent; border: 1px solid #53655e; border-radius: 7px; cursor: pointer; font-size: 10px; font-weight: 700; }
+.consent-banner .consent-accept { color: white; border-color: var(--green-500); background: var(--green-500); }
+@media (max-width: 560px) { .consent-banner { left: 16px; right: 16px; bottom: 16px; width: auto; align-items: stretch; flex-direction: column; } .consent-banner > div { justify-content: flex-end; } }

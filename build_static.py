@@ -12,7 +12,7 @@ from server import SITE_URL, load_products, product_page, product_public
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "public"
-STATIC_FILES = ("styles.css", "app.js", "products.js", "favicon.svg", "site.webmanifest")
+STATIC_FILES = ("styles.css", "app.js", "analytics.js", "products.js", "favicon.svg", "site.webmanifest")
 
 
 def write(path: Path, content: str):

@@ -98,6 +98,9 @@ function renderFeaturedProduct() {
   link.href = product.url;
   link.target = "_blank";
   link.rel = "noopener sponsored";
+  link.dataset.offerLink = "";
+  link.dataset.productId = product.id;
+  link.dataset.store = product.store;
   link.firstChild.textContent = "Ver oferta ";
 }
 
@@ -148,7 +151,7 @@ function productCard(product) {
         <span class="store store-${product.storeClass}">${product.store}</span>
         <div class="price-row"><strong>${price}</strong>${oldPrice}</div>
         <small>${product.installment}</small>
-        <a class="button button-green" href="${product.url}" target="_blank" rel="noopener sponsored">Ver oferta <svg><use href="#icon-external" /></svg></a>
+        <a class="button button-green" href="${product.url}" target="_blank" rel="noopener sponsored" data-offer-link data-product-id="${product.id}" data-store="${product.store}">Ver oferta <svg><use href="#icon-external" /></svg></a>
       </div>
     </article>`;
 }
