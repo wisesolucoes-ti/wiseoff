@@ -152,6 +152,10 @@ function productCard(product) {
         <div class="price-row"><strong>${price}</strong>${oldPrice}</div>
         <small>${product.installment}</small>
         <a class="button button-green" href="${product.url}" target="_blank" rel="noopener sponsored" data-offer-link data-product-id="${product.id}" data-store="${product.store}">Ver oferta <svg><use href="#icon-external" /></svg></a>
+        <div class="share-actions" aria-label="Compartilhar oferta">
+          <a class="share-button share-whatsapp" href="https://wa.me/" target="_blank" rel="noopener" data-share="whatsapp" data-share-url="${detailUrl}">WhatsApp</a>
+          <button class="share-button share-instagram" type="button" data-share="instagram" data-share-url="${detailUrl}">Instagram</button>
+        </div>
       </div>
     </article>`;
 }

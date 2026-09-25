@@ -138,7 +138,7 @@ def product_page(product):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{seo_title} em oferta | WiseOff"><meta name="twitter:description" content="{seo_description}"><meta name="twitter:image" content="{image}">
 <title>{seo_title} em oferta | WiseOff</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/styles.css"><script src="/analytics.js" defer></script><script type="application/ld+json">{structured_json}</script>
+<link rel="stylesheet" href="/styles.css"><script src="/analytics.js" defer></script><script src="/sharing.js" defer></script><script type="application/ld+json">{structured_json}</script>
 </head><body class="detail-page">
 <header class="site-header"><div class="shell nav-wrap admin-nav"><a class="brand" href="/"><span>Wise<span>Off</span></span><small>Escolha esperta.<br>Preço melhor.</small></a><a class="back-link" href="/#ofertas">← Todas as ofertas</a></div></header>
 <main class="detail-main shell">
@@ -148,6 +148,7 @@ def product_page(product):
 <div class="detail-copy"><span class="category-pill">{category}</span><h1>{name}</h1><p>{description}</p><div class="detail-store">Oferta encontrada na <strong>{store}</strong></div>
 <div class="detail-price"><strong>{price_html}</strong>{old_price_html}</div><small>{page_escape(item.get('installment'))}</small>
 <a class="button button-green" href="{offer_url}" target="_blank" rel="noopener sponsored nofollow" data-offer-link data-product-id="{item.get('id')}" data-store="{store}">Ver oferta na {store} →</a>
+<div class="share-actions detail-share" aria-label="Compartilhar oferta"><a class="share-button share-whatsapp" href="https://wa.me/" target="_blank" rel="noopener" data-share="whatsapp" data-share-url="{item['detailUrl']}" data-share-name="{name}">WhatsApp</a><button class="share-button share-instagram" type="button" data-share="instagram" data-share-url="{item['detailUrl']}" data-share-name="{name}">Instagram</button></div>
 <p class="affiliate-note">O preço pode mudar a qualquer momento. Confirme as condições no site da loja.</p></div>
 </article>
 <section class="detail-about"><h2>Sobre esta oferta</h2><p>Esta oferta foi selecionada pela curadoria WiseOff. Comparamos as informações públicas do produto para ajudar você a comprar melhor.</p><time datetime="{page_escape(published)}">Oferta publicada em {page_escape(published[:10])}</time></section>

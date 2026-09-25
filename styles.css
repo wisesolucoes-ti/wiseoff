@@ -140,6 +140,13 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .price-row del { color: #909a96; font-size: 11px; }
 .product-buy > small { color: var(--muted); font-size: 10px; }
 .product-buy .button { width: 100%; margin-top: 16px; }
+.share-actions { margin-top: 8px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.share-button { min-height: 28px; padding: 0 7px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--line); border-radius: 7px; color: #53615b; background: white; cursor: pointer; font: 700 9px "DM Sans", sans-serif; text-decoration: none; transition: .2s; }
+.share-button:hover { color: var(--green-700); border-color: var(--green-500); background: var(--green-50); }
+.share-whatsapp { color: #137b45; }
+.share-instagram { color: #9c3577; }
+.share-notice { position: fixed; z-index: 1100; left: 50%; bottom: 24px; padding: 12px 17px; color: white; background: var(--green-950); border-radius: 9px; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translate(-50%, 60px); transition: .25s; font-size: 12px; }
+.share-notice.show { opacity: 1; transform: translate(-50%, 0); }
 .empty-state { padding: 70px 20px; text-align: center; border: 1px dashed var(--line); border-radius: var(--radius); background: var(--surface); }
 .empty-state svg { width: 36px; height: 36px; color: var(--green-600); }
 .empty-state h3 { margin: 12px 0 4px; }
@@ -359,6 +366,8 @@ footer { border-top: 1px solid var(--line); }
 .detail-price del { color: #8b9691; font-size: 13px; }
 .detail-copy > small { color: var(--muted); font-size: 11px; }
 .detail-copy > .button { width: 100%; min-height: 52px; margin-top: 23px; font-size: 14px; }
+.detail-copy .detail-share { width: 100%; margin-top: 10px; }
+.detail-copy .detail-share .share-button { min-height: 36px; font-size: 11px; }
 .detail-copy .affiliate-note { margin-top: 12px; text-align: center; font-size: 9px; }
 .detail-about { margin-top: 22px; padding: 30px; background: white; border: 1px solid var(--line); border-radius: 16px; }
 .detail-about h2 { margin: 0 0 7px; font: 800 20px "Manrope", sans-serif; }
