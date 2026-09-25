@@ -5,7 +5,7 @@ Vitrine responsiva de ofertas inspirada no layout `Imagens_Base/BaseLayout.png`.
 ## Ambiente local
 
 ```bash
-python3 server.py
+./iniciar.sh
 ```
 
 Acesse:
@@ -27,7 +27,7 @@ O workflow `.github/workflows/pages.yml` executa essa geração e publica automa
 
 Depois da configuração inicial do repositório, o fluxo diário é:
 
-1. Inicie `python3 server.py`.
+1. Inicie `./iniciar.sh`.
 2. Cadastre ou atualize ofertas em `/admin.html`.
 3. Execute `bash publicar.sh`.
 4. Acompanhe a publicação na aba **Actions** do GitHub.

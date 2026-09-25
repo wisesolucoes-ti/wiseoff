@@ -236,7 +236,7 @@ $("#newsletterForm").addEventListener("submit", (event) => {
   event.preventDefault();
   event.currentTarget.reset();
   const toast = $("#toast");
-  toast.textContent = "Pronto! Você entrou para a lista de ofertas.";
+  toast.textContent = "Cadastro de alertas em breve. Nenhum e-mail foi armazenado.";
   toast.classList.add("show");
   setTimeout(() => toast.classList.remove("show"), 3500);
 });

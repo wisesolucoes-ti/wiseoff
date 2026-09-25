@@ -151,7 +151,7 @@ def product_page(product):
 <p class="affiliate-note">O preço pode mudar a qualquer momento. Confirme as condições no site da loja.</p></div>
 </article>
 <section class="detail-about"><h2>Sobre esta oferta</h2><p>Esta oferta foi selecionada pela curadoria WiseOff. Comparamos as informações públicas do produto para ajudar você a comprar melhor.</p><time datetime="{page_escape(published)}">Oferta publicada em {page_escape(published[:10])}</time></section>
-</main><footer><div class="shell footer-wrap"><a class="brand footer-brand" href="/"><span>Wise<span>Off</span></span></a><p>Boas escolhas para você gastar melhor.</p><small>© 2026 WiseOff</small></div></footer>
+</main><footer><div class="shell footer-wrap"><a class="brand footer-brand" href="/"><span>Wise<span>Off</span></span></a><p>Boas escolhas para você gastar melhor.</p><nav><a href="/#ofertas">Ofertas</a><a href="mailto:contato@wisesolucoesti.com.br">Contato</a><a href="/privacidade.html">Privacidade</a></nav><small>© 2026 WiseOff</small></div></footer>
 </body></html>'''
 
 

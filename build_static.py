@@ -12,7 +12,7 @@ from server import SITE_URL, load_products, product_page, product_public
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "public"
-STATIC_FILES = ("styles.css", "app.js", "analytics.js", "products.js", "favicon.svg", "site.webmanifest")
+STATIC_FILES = ("styles.css", "app.js", "analytics.js", "products.js", "privacidade.html", "favicon.svg", "site.webmanifest")
 
 
 def write(path: Path, content: str):
@@ -43,7 +43,10 @@ def main():
 
     write(OUTPUT / "data" / "products.json", json.dumps(public_products, ensure_ascii=False, indent=2))
 
-    sitemap_urls = [f"  <url><loc>{SITE_URL}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>"]
+    sitemap_urls = [
+        f"  <url><loc>{SITE_URL}/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>",
+        f"  <url><loc>{SITE_URL}/privacidade.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>",
+    ]
     for product in products:
         item = product_public(product)
         write(OUTPUT / "produto" / item["slug"] / "index.html", product_page(product))
