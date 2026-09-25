@@ -104,8 +104,8 @@
   async function shareOnDesktop(option, product) {
     const encodedUrl = encodeURIComponent(product.url);
     const encodedText = encodeURIComponent(product.text);
-    if (option === "facebook") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, "_blank", "noopener,noreferrer,width=680,height=560");
-    if (option === "twitter") window.open(`https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`, "_blank", "noopener,noreferrer,width=680,height=560");
+    if (option === "facebook") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`, "_blank", "noopener,noreferrer");
+    if (option === "twitter") window.open(`https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`, "_blank", "noopener,noreferrer");
     if (option === "whatsapp") window.open(`https://wa.me/?text=${encodeURIComponent(`${product.text}\n${product.url}`)}`, "_blank", "noopener,noreferrer");
     if (option === "instagram") {
       window.open("https://www.instagram.com/", "_blank", "noopener,noreferrer");
