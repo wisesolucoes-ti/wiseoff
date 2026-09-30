@@ -1,5 +1,66 @@
 [
   {
+    "id": 1790772607979,
+    "name": "Whisky Chivas Regal 12 anos Blended Escocês - 750 ml",
+    "description": "Para chivas, o sucesso é um blend, na vida e no scotch. Em quase 220 anos de marca, nos sustentamos nos pilares de sucesso compartilhado, empreendedorismo e generosidade, assim como nossos criadores, john e james…",
+    "image": "https://m.media-amazon.com/images/I/51vXUyibQAL._AC_UF1000,1000_QL80_.jpg",
+    "price": 79.99,
+    "oldPrice": 149,
+    "category": "Alimentos e Bebidas",
+    "store": "Amazon",
+    "storeClass": "amazon",
+    "url": "https://link.amazon/B0drMeRKw",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-09-30T12:50:07.979Z"
+  },
+  {
+    "id": 1790772387871,
+    "name": "Panela pressão elétrica electrolux 3 Litros inox compacta feijão segura 9 travas segurança",
+    "description": "9 dispositivos de segurança para cozinhar com total confiança. Timer de até 60 min e Função Feijão para preparo prático. Cesto interno antiaderente removível para limpeza fácil. Função Manter Aquecido automática após o…",
+    "image": "https://m.media-amazon.com/images/I/71ZO39oF0pL._AC_UF894,1000_QL80_.jpg",
+    "price": 279,
+    "oldPrice": 349,
+    "category": "Casa",
+    "store": "Amazon",
+    "storeClass": "amazon",
+    "url": "https://link.amazon/B0daw3Fzq",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-09-30T12:46:27.871Z"
+  },
+  {
+    "id": 1790771800557,
+    "name": "Kit De Sobrevivência De Emergência De Acampamento Aventura",
+    "description": "Tamanho e Peso Ideais: Este kit de sobrevivência mede 16,5 x 10,5 x 5 cm e pesa 0,59 kg. Todos os equipamentos internos foram cuidadosamente selecionados para lidar com os problemas de sobrevivência mais comuns e…",
+    "image": "https://m.media-amazon.com/images/I/61DqavFU4ZL._AC_UF1000,1000_QL80_.jpg",
+    "price": 130.14,
+    "oldPrice": 150,
+    "category": "Acessórios",
+    "store": "Amazon",
+    "storeClass": "amazon",
+    "url": "https://link.amazon/B00MNiZqZ",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-09-30T12:36:40.557Z"
+  },
+  {
+    "id": 1790771502653,
+    "name": "Lava e Seca TCL 11kg C311WDW Inverter",
+    "description": "A lava e seca TCL C311WDW é a solução ideal para quem busca praticidade e economia. Com capacidade de lavagem de 11kg e secagem de 7kg, ela é perfeita para famílias de até 4 pessoas.",
+    "image": "https://a-static.mlcdn.com.br/800x560/lava-e-seca-tcl-11kg-c311wdw-inverter/magazineluiza/238149700/26754297cfbc8947dd420ddd972e4c32.jpg",
+    "price": 2899,
+    "oldPrice": 3499,
+    "category": "Casa",
+    "store": "Magalu",
+    "storeClass": "magalu",
+    "url": "https://magazineluiza.onelink.me/589508454/9bjcmjjx",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-09-30T12:31:42.653Z",
+    "featured": true
+  },
+  {
     "id": 1790640614647,
     "name": "I2GO, Carregador Portátil (Power Bank) Ultra Rápido 10000mAh, Power Delivery 20W, 2 Saídas",
     "description": "O Carregador Portátil Power Bank Ultra Rápido 10000mAh Power Delivery 20W possui 2 Saídas USB A + 1 Entrada/Saída USB-C Power Delivery de até 20W Carrega 50% da sua bateria em 30 minutos - Dispositivos compatíveis com…",
@@ -12,7 +73,8 @@
     "url": "https://link.amazon/B0ejWm8QH",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-29T00:10:14.647Z"
+    "publishedAt": "2026-09-29T00:10:14.647Z",
+    "featured": false
   },
   {
     "id": 1790640447927,
@@ -27,7 +89,8 @@
     "url": "https://link.amazon/B0dcfsxet",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-29T00:07:27.927Z"
+    "publishedAt": "2026-09-29T00:07:27.927Z",
+    "featured": false
   },
   {
     "id": 1790640385842,
@@ -42,7 +105,8 @@
     "url": "https://link.amazon/B0cVFhBH2",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-29T00:06:25.842Z"
+    "publishedAt": "2026-09-29T00:06:25.842Z",
+    "featured": false
   },
   {
     "id": 1790640294436,
@@ -57,7 +121,8 @@
     "url": "https://link.amazon/B00TsY7wl",
     "badge": "Menor preço nos últimos 365 dias",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-29T00:04:54.436Z"
+    "publishedAt": "2026-09-29T00:04:54.436Z",
+    "featured": false
   },
   {
     "id": 1790640153042,
@@ -72,7 +137,8 @@
     "url": "https://link.amazon/B0fPUz5JK",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-29T00:02:33.042Z"
+    "publishedAt": "2026-09-29T00:02:33.042Z",
+    "featured": false
   },
   {
     "id": 1790639998145,
@@ -87,7 +153,8 @@
     "url": "https://link.amazon/B07kFMnfr",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T23:59:58.145Z"
+    "publishedAt": "2026-09-28T23:59:58.145Z",
+    "featured": false
   },
   {
     "id": 1790639886549,
@@ -102,7 +169,8 @@
     "url": "https://link.amazon/B0h6JOzMN",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T23:58:06.549Z"
+    "publishedAt": "2026-09-28T23:58:06.549Z",
+    "featured": false
   },
   {
     "id": 1790639828659,
@@ -117,7 +185,8 @@
     "url": "https://link.amazon/B0hsyltet",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T23:57:08.659Z"
+    "publishedAt": "2026-09-28T23:57:08.659Z",
+    "featured": false
   },
   {
     "id": 1790558016038,
@@ -132,7 +201,8 @@
     "url": "https://link.amazon/B0d9qWbcu",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T01:13:36.038Z"
+    "publishedAt": "2026-09-28T01:13:36.038Z",
+    "featured": false
   },
   {
     "id": 1790557862953,
@@ -147,7 +217,8 @@
     "url": "https://link.amazon/B08kDTcd2",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T01:11:02.953Z"
+    "publishedAt": "2026-09-28T01:11:02.953Z",
+    "featured": false
   },
   {
     "id": 1790557505007,
@@ -162,7 +233,8 @@
     "url": "https://link.amazon/B0a8Ufyec",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T01:05:05.007Z"
+    "publishedAt": "2026-09-28T01:05:05.007Z",
+    "featured": false
   },
   {
     "id": 1790557445331,
@@ -177,7 +249,8 @@
     "url": "https://link.amazon/B0ajvXugS",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T01:04:05.331Z"
+    "publishedAt": "2026-09-28T01:04:05.331Z",
+    "featured": false
   },
   {
     "id": 1790557099715,
@@ -192,7 +265,8 @@
     "url": "https://link.amazon/B001lx1Wu",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T00:58:19.715Z"
+    "publishedAt": "2026-09-28T00:58:19.715Z",
+    "featured": false
   },
   {
     "id": 1790557042064,
@@ -207,7 +281,8 @@
     "url": "https://link.amazon/B00tTOaHX",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T00:57:22.064Z"
+    "publishedAt": "2026-09-28T00:57:22.064Z",
+    "featured": false
   },
   {
     "id": 1790556152727,
@@ -222,7 +297,8 @@
     "url": "https://link.amazon/B033DxATn",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-28T00:42:32.727Z"
+    "publishedAt": "2026-09-28T00:42:32.727Z",
+    "featured": false
   },
   {
     "id": 1790336300743,
@@ -237,7 +313,8 @@
     "url": "https://link.amazon/B05c5KDlK",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T11:38:20.743Z"
+    "publishedAt": "2026-09-25T11:38:20.743Z",
+    "featured": false
   },
   {
     "id": 1790336147244,
@@ -252,7 +329,8 @@
     "url": "https://link.amazon/B09uyufu8",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T11:35:47.244Z"
+    "publishedAt": "2026-09-25T11:35:47.244Z",
+    "featured": false
   },
   {
     "id": 1790336079119,
@@ -267,7 +345,8 @@
     "url": "https://link.amazon/B00TsJIe0",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T11:34:39.119Z"
+    "publishedAt": "2026-09-25T11:34:39.119Z",
+    "featured": false
   },
   {
     "id": 1790335989196,
@@ -282,7 +361,8 @@
     "url": "https://link.amazon/B0265pVIf",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T11:33:09.196Z"
+    "publishedAt": "2026-09-25T11:33:09.196Z",
+    "featured": false
   },
   {
     "id": 1790335765501,
@@ -297,7 +377,8 @@
     "url": "https://link.amazon/B0fFznhLa",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T11:29:25.501Z"
+    "publishedAt": "2026-09-25T11:29:25.501Z",
+    "featured": false
   },
   {
     "id": 1790303112468,
@@ -312,7 +393,8 @@
     "url": "https://link.amazon/B0iiJ7mDt",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:25:12.468Z"
+    "publishedAt": "2026-09-25T02:25:12.468Z",
+    "featured": false
   },
   {
     "id": 1790302604007,
@@ -327,7 +409,8 @@
     "url": "https://link.amazon/B0hjyKxDv",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:16:44.007Z"
+    "publishedAt": "2026-09-25T02:16:44.007Z",
+    "featured": false
   },
   {
     "id": 1790302522585,
@@ -342,7 +425,8 @@
     "url": "https://link.amazon/B0eZQTzyo",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:15:22.585Z"
+    "publishedAt": "2026-09-25T02:15:22.585Z",
+    "featured": false
   },
   {
     "id": 1790302356711,
@@ -357,7 +441,8 @@
     "url": "https://link.amazon/B0ezJi7Sh",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:12:36.712Z"
+    "publishedAt": "2026-09-25T02:12:36.712Z",
+    "featured": false
   },
   {
     "id": 1790302271608,
@@ -372,7 +457,8 @@
     "url": "https://link.amazon/B0avo9UfN",
     "badge": "Oferta Verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:11:11.608Z"
+    "publishedAt": "2026-09-25T02:11:11.608Z",
+    "featured": false
   },
   {
     "id": 1790302048671,
@@ -387,7 +473,8 @@
     "url": "https://link.amazon/B0e9bxbPf",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-25T02:07:28.671Z"
+    "publishedAt": "2026-09-25T02:07:28.671Z",
+    "featured": false
   },
   {
     "id": 1790213376419,
@@ -402,7 +489,8 @@
     "url": "https://link.amazon/B0hdxHNSC",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-24T01:29:36.419Z"
+    "publishedAt": "2026-09-24T01:29:36.419Z",
+    "featured": false
   },
   {
     "id": 1790212897276,
@@ -417,7 +505,8 @@
     "url": "https://link.amazon/B02FREfqt",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-24T01:21:37.276Z"
+    "publishedAt": "2026-09-24T01:21:37.276Z",
+    "featured": false
   },
   {
     "id": 1790212625366,
@@ -432,7 +521,8 @@
     "url": "https://link.amazon/B0clHW96T",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-24T01:17:05.366Z"
+    "publishedAt": "2026-09-24T01:17:05.366Z",
+    "featured": false
   },
   {
     "id": 1790212354630,
@@ -447,7 +537,8 @@
     "url": "https://link.amazon/B04zbgRhS",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-24T01:12:34.630Z"
+    "publishedAt": "2026-09-24T01:12:34.630Z",
+    "featured": false
   },
   {
     "id": 1790192375834,
@@ -463,7 +554,7 @@
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-09-23T19:39:35.834Z",
-    "featured": true
+    "featured": false
   },
   {
     "id": 1790171048730,
@@ -478,7 +569,8 @@
     "url": "https://s.shopee.com.br/1qcGAzst17",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-23T13:44:08.730Z"
+    "publishedAt": "2026-09-23T13:44:08.730Z",
+    "featured": false
   },
   {
     "id": 1790168241431,
@@ -493,7 +585,8 @@
     "url": "https://www.amazon.com.br/Rel%C3%B3gio-masculino-Timex-Expedition-Natural/dp/B01JO75X6K?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1X0TCE59CP1DE&dib=eyJ2IjoiMSJ9.wyxJvhvXGGzQcpWkXQwl79Bl37_sW3Xg_pFlwXmOQa6B2qXA2o7q-07DvM56IQt5FfXkulp8WGUT3og4WaON2_8cTLNlDVtqOnk2felDfCxqnQYSqRxpJMEjALZ0BsFQb3VEm3x5rM3u-OjJ5jZk9KmnXeYl2GoRDc7O0ayYdY-b9oBE3pLD_4jPST0YuXighFwZqOTXPvZpxDxPA0wA5FOYJHrLUmPODmXc05OLcHZ53zq1ujOZHpVlMRg7w34tWwwYlCnKMguFwE8CaZt4Duhpr4Mu2mTAWLjZBvdABMg.xPaA05SXFR4rxv4dkqAqpTTFVfpTPJ5QYGjiswRe8mA&dib_tag=se&keywords=timex&qid=1790168168&sprefix=timex%2Caps%2C253&sr=8-5&ufe=app_do%3Aamzn1.fos.039ad06c-756b-42cf-b2ab-dcc42e7aa5c9&th=1&linkCode=sl2&tag=wiseimport-20&linkId=f4b8729e20a7b6de7627ade97c95fbd5&ref_=as_li_ss_tl&ascsubtag=srctok-2ef356310e7549cf&btn_type=ss&btn_ref=srctok-2ef356310e7549cf",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-23T12:57:21.431Z"
+    "publishedAt": "2026-09-23T12:57:21.431Z",
+    "featured": false
   },
   {
     "id": 1790166155963,
@@ -508,7 +601,8 @@
     "url": "https://www.amazon.com.br/Classic-Caixa-M%C3%A9dia-Pe%C3%A7as-Criativas/dp/B00NHQFA1I?pd_rd_w=Tsh7V&content-id=amzn1.sym.684d163d-0b26-47cc-90bb-5b12d9738023&pf_rd_p=684d163d-0b26-47cc-90bb-5b12d9738023&pf_rd_r=FC9GE2JVT6ATBFH4EH5H&pd_rd_wg=zawri&pd_rd_r=f46d2018-1fe3-464c-ad21-0f2006b51f8a&pd_rd_i=B00NHQFA1I&linkCode=sl2&tag=wiseimport-20&linkId=20d2e1ba2a7fadbd494cb941722d3a75&ref_=as_li_ss_tl&ascsubtag=srctok-3c579d30251b1045&btn_type=ss&btn_ref=srctok-3c579d30251b1045",
     "badge": "Oferta importada e verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-23T12:22:35.963Z"
+    "publishedAt": "2026-09-23T12:22:35.963Z",
+    "featured": false
   },
   {
     "id": 1786584445483,
@@ -524,7 +618,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-08-13T01:27:25.483Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40mm-r-267-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40mm-r-267-00",
+    "featured": false
   },
   {
     "id": 1776304819873,
@@ -539,7 +634,8 @@
     "url": "https://amzn.to/3Q8hMUF",
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-04-16T02:00:19.872Z"
+    "publishedAt": "2026-04-16T02:00:19.872Z",
+    "featured": false
   },
   {
     "id": 1774577016306,
@@ -555,7 +651,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-03-27T02:03:36.304Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/timex-relógio-masculino-expedition-scout-de-40-mm-r-276-27"
+    "sourceUrl": "https://www.wiseoff.com.br/post/timex-relógio-masculino-expedition-scout-de-40-mm-r-276-27",
+    "featured": false
   },
   {
     "id": 1774399386162,
@@ -571,7 +668,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-03-25T00:43:06.159Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-de-pulso-masculino-casio-g-shock-anadigi-ga-2100-r-441-75-pix"
+    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-de-pulso-masculino-casio-g-shock-anadigi-ga-2100-r-441-75-pix",
+    "featured": false
   },
   {
     "id": 1773060875723,
@@ -587,7 +685,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-03-09T12:54:35.719Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-casio-standard-digital-bateria-de-10-anos-unissex-r-197-12"
+    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-casio-standard-digital-bateria-de-10-anos-unissex-r-197-12",
+    "featured": false
   },
   {
     "id": 1772549658403,
@@ -603,7 +702,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-03-03T14:54:18.398Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/fire-tv-stick-hd-r-269-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/fire-tv-stick-hd-r-269-00",
+    "featured": false
   },
   {
     "id": 1770842234899,
@@ -619,7 +719,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-02-11T20:37:14.893Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40mm-r-315-78"
+    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40mm-r-315-78",
+    "featured": false
   },
   {
     "id": 1770134731784,
@@ -635,7 +736,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-02-03T16:05:31.777Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-r-629-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-r-629-00",
+    "featured": false
   },
   {
     "id": 1769448371339,
@@ -651,7 +753,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-01-26T17:26:11.331Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40-mm-r-320-34"
+    "sourceUrl": "https://www.wiseoff.com.br/post/timex-expedition-scout-40-mm-r-320-34",
+    "featured": false
   },
   {
     "id": 1767024365344,
@@ -667,7 +770,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-12-29T16:06:05.335Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/casio-tough-solar-aq-s820w-r-398-00-20-off-amazon"
+    "sourceUrl": "https://www.wiseoff.com.br/post/casio-tough-solar-aq-s820w-r-398-00-20-off-amazon",
+    "featured": false
   },
   {
     "id": 1766161714428,
@@ -683,7 +787,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-12-19T16:28:34.418Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/samsung-galaxy-a07-128gb-preto-4gb-ram-tela-6-7-r-698-99"
+    "sourceUrl": "https://www.wiseoff.com.br/post/samsung-galaxy-a07-128gb-preto-4gb-ram-tela-6-7-r-698-99",
+    "featured": false
   },
   {
     "id": 1764382070178,
@@ -698,7 +803,8 @@
     "url": "https://www.wiseoff.com.br/post/smartphone-motorola-moto-g35-5g",
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2025-11-29T02:07:50.167Z"
+    "publishedAt": "2025-11-29T02:07:50.167Z",
+    "featured": false
   },
   {
     "id": 1763864911873,
@@ -714,7 +820,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-23T02:28:31.861Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/power-bank-10000mah-com-caregamento-por-inducão-r-78-99"
+    "sourceUrl": "https://www.wiseoff.com.br/post/power-bank-10000mah-com-caregamento-por-inducão-r-78-99",
+    "featured": false
   },
   {
     "id": 1763861504197,
@@ -730,7 +837,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-23T01:31:44.184Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/echo-dot-amazon-r-303-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/echo-dot-amazon-r-303-00",
+    "featured": false
   },
   {
     "id": 1763585081542,
@@ -746,7 +854,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-19T20:44:41.528Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/citizen-relógio-quartzo-30-off-no-app-amazon-r-439-60"
+    "sourceUrl": "https://www.wiseoff.com.br/post/citizen-relógio-quartzo-30-off-no-app-amazon-r-439-60",
+    "featured": false
   },
   {
     "id": 1763152532930,
@@ -762,7 +871,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-14T20:35:32.915Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/whisky-jack-daniel-s-old-no-7-tennessee-whiskey-700ml-r-99-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/whisky-jack-daniel-s-old-no-7-tennessee-whiskey-700ml-r-99-00",
+    "featured": false
   },
   {
     "id": 1763151132149,
@@ -778,7 +888,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-14T20:12:12.133Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/whisky-johnnie-walker-red-label-750ml-r-54-80"
+    "sourceUrl": "https://www.wiseoff.com.br/post/whisky-johnnie-walker-red-label-750ml-r-54-80",
+    "featured": false
   },
   {
     "id": 1762343271870,
@@ -794,7 +905,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-11-05T11:47:51.853Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-invicta-8932ob-diver-cupom-usa30-r-370-86"
+    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-invicta-8932ob-diver-cupom-usa30-r-370-86",
+    "featured": false
   },
   {
     "id": 1761829988997,
@@ -810,7 +922,8 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-10-30T13:13:08.979Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/smart-tv-philips-50-r-1-847-12"
+    "sourceUrl": "https://www.wiseoff.com.br/post/smart-tv-philips-50-r-1-847-12",
+    "featured": false
   },
   {
     "id": 1761312413480,
@@ -826,6 +939,7 @@
     "badge": "Importada do site anterior",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2025-10-24T13:26:53.461Z",
-    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-timex-expedition-40-mm-40-off-r-222-00"
+    "sourceUrl": "https://www.wiseoff.com.br/post/relógio-timex-expedition-40-mm-40-off-r-222-00",
+    "featured": false
   }
 ]
