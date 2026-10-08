@@ -1,7 +1,9 @@
 const STORAGE_KEY = "wiseoff-products";
+const AMAZON_API_KEY = "wiseoff-use-amazon-api";
 const form = document.querySelector("#productForm");
 const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });
 const fields = ["name", "description", "price", "oldPrice", "category", "store", "url", "image", "badge", "installment"];
+const metadataFields = ["productAsin", "amazonUpdatedAt", "importSource", "availability"];
 
 function keepOnlyLatestProductOnce() {
   const migrationKey = "wiseoff-keep-latest-v1";
@@ -77,6 +79,7 @@ function updatePreview() {
 function resetForm() {
   form.reset();
   document.querySelector("#productId").value = "";
+  metadataFields.forEach((field) => { document.querySelector(`#${field}`).value = ""; });
   document.querySelector("#formStep").textContent = "Nova oferta";
   document.querySelector("#formTitle").textContent = "Informações do produto";
   document.querySelector("#submitLabel").textContent = "Cadastrar oferta";
@@ -108,7 +111,7 @@ async function importFromUrl() {
     const response = await fetch("/api/import-product", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ url })
+      body: JSON.stringify({ url, useAmazonApi: document.querySelector("#useAmazonApi").checked })
     });
     const result = await response.json();
     if (!response.ok) throw new Error(result.error || "Não foi possível importar o produto.");
@@ -119,17 +122,23 @@ async function importFromUrl() {
     });
     if (result.price) document.querySelector("#price").value = formatInputNumber(result.price);
     if (result.oldPrice) document.querySelector("#oldPrice").value = formatInputNumber(result.oldPrice);
-    document.querySelector("#badge").value ||= "Oferta importada e verificada";
+    if (result.badge) document.querySelector("#badge").value = result.badge;
+    else document.querySelector("#badge").value ||= "Oferta importada e verificada";
+    document.querySelector("#productAsin").value = result.asin || "";
+    document.querySelector("#amazonUpdatedAt").value = result.amazonUpdatedAt || "";
+    document.querySelector("#importSource").value = result.importSource || "";
+    document.querySelector("#availability").value = result.availability || "";
     updatePreview();
 
     const missing = [];
     if (!result.price) missing.push("preço");
     if (!result.oldPrice) missing.push("preço anterior");
     if (!result.image) missing.push("imagem");
-    status.textContent = missing.length
-      ? `Dados encontrados. Revise o formulário e complete: ${missing.join(", ")}.`
-      : "Produto encontrado! Revise os dados e clique em Cadastrar oferta.";
-    status.className = `import-status ${missing.length ? "warning" : "success"}`;
+    const source = result.importSource === "Amazon Creators API" ? "Dados oficiais encontrados pela Amazon Creators API." : "Dados encontrados na página da loja.";
+    status.textContent = result.importWarning || (missing.length
+      ? `${source} Revise e complete: ${missing.join(", ")}.`
+      : `${source} Revise os dados e clique em Cadastrar oferta.`);
+    status.className = `import-status ${(missing.length || result.importWarning) ? "warning" : "success"}`;
     document.querySelector("#name").focus();
   } catch (error) {
     status.textContent = error.message;
@@ -148,6 +157,10 @@ function editProduct(id) {
   fields.forEach((field) => {
     document.querySelector(`#${field}`).value = product[field] ?? "";
   });
+  document.querySelector("#productAsin").value = product.asin ?? "";
+  document.querySelector("#amazonUpdatedAt").value = product.amazonUpdatedAt ?? "";
+  document.querySelector("#importSource").value = product.importSource ?? "";
+  document.querySelector("#availability").value = product.availability ?? "";
   document.querySelector("#formStep").textContent = "Editando oferta";
   document.querySelector("#formTitle").textContent = product.name;
   document.querySelector("#submitLabel").textContent = "Salvar alterações";
@@ -226,7 +239,11 @@ form.addEventListener("submit", async (event) => {
     url: document.querySelector("#url").value.trim(),
     badge: document.querySelector("#badge").value.trim() || "Oferta verificada",
     installment: document.querySelector("#installment").value.trim() || "Consulte as condições na loja",
-    publishedAt: existingId ? (loadProducts().find((item) => item.id === existingId)?.publishedAt || new Date().toISOString()) : new Date().toISOString()
+    publishedAt: existingId ? (loadProducts().find((item) => item.id === existingId)?.publishedAt || new Date().toISOString()) : new Date().toISOString(),
+    asin: document.querySelector("#productAsin").value.trim(),
+    amazonUpdatedAt: document.querySelector("#amazonUpdatedAt").value.trim(),
+    importSource: document.querySelector("#importSource").value.trim(),
+    availability: document.querySelector("#availability").value.trim()
   };
 
   try {
@@ -260,6 +277,10 @@ document.querySelector("#adminProductsList").addEventListener("click", (event) =
 document.querySelector("#resetForm").addEventListener("click", resetForm);
 document.querySelector("#cancelEdit").addEventListener("click", resetForm);
 document.querySelector("#importButton").addEventListener("click", importFromUrl);
+document.querySelector("#useAmazonApi").checked = localStorage.getItem(AMAZON_API_KEY) === "true";
+document.querySelector("#useAmazonApi").addEventListener("change", (event) => {
+  localStorage.setItem(AMAZON_API_KEY, String(event.target.checked));
+});
 document.querySelector("#importUrl").addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();

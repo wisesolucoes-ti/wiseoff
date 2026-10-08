@@ -270,6 +270,11 @@ footer { border-top: 1px solid var(--line); }
 .importer-control .button { background: var(--green-500); box-shadow: none; }
 .importer-control .button:disabled { opacity: .65; cursor: wait; }
 .importer-control .button.loading svg { animation: importPulse .8s ease-in-out infinite alternate; }
+.amazon-api-option { width: fit-content; margin-top: 12px; display: flex; align-items: flex-start; gap: 9px; color: #dcebe5; cursor: pointer; }
+.amazon-api-option input { width: 16px; height: 16px; margin: 1px 0 0; accent-color: var(--green-500); }
+.amazon-api-option span { display: flex; flex-direction: column; gap: 2px; font-size: 10px; }
+.amazon-api-option strong { color: white; font-size: 11px; }
+.amazon-api-option small { color: #a9c3b9; }
 .import-status { min-height: 14px; margin-top: 9px; color: #b7cec5; font-size: 10px; }
 .import-status.success { color: #7cf0b5; }
 .import-status.warning { color: #ffe09a; }

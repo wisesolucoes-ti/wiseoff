@@ -15,6 +15,22 @@ Acesse:
 
 O painel importa informações públicas dos links, cadastra, edita, exclui e destaca ofertas. Os produtos são armazenados em `data/products.json`.
 
+### Amazon Creators API
+
+Para links da Amazon, o cadastro continua usando por padrão a extração convencional da página. Para consultar a Creators API oficial, marque **Usar Amazon Creators API** junto ao campo de importação; essa preferência fica salva somente no navegador. As credenciais locais são lidas de `credentials/wiseoff-credentials.csv`, diretório protegido pelo `.gitignore`, e nunca são enviadas ao navegador nem publicadas no GitHub. Se a API tiver uma falha temporária, o painel tenta obter os dados diretamente da página e exibe um aviso para revisão.
+
+O identificador de associado padrão é `wiseimport-20`. Para usar outro sem alterar o código, defina `AMAZON_PARTNER_TAG` antes de iniciar o servidor. Em produção com um backend, prefira variáveis de ambiente:
+
+```bash
+export AMAZON_CREATORS_CLIENT_ID="..."
+export AMAZON_CREATORS_CLIENT_SECRET="..."
+export AMAZON_CREATORS_VERSION="3.1"
+export AMAZON_PARTNER_TAG="wiseimport-20"
+./iniciar.sh
+```
+
+Os dados importados guardam o ASIN, a origem e a data da consulta. Preços e disponibilidade da Amazon mudam com frequência; confira os dados antes de publicar uma oferta.
+
 ## Publicação no GitHub Pages
 
 A publicação é estática. O script abaixo gera em `public/` a página inicial, o catálogo JSON, páginas individuais de produtos, sitemap, robots.txt, dados estruturados e o arquivo de domínio:

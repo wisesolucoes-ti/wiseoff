@@ -54,6 +54,10 @@
                 <span>Buscar dados</span>
               </button>
             </div>
+            <label class="amazon-api-option">
+              <input id="useAmazonApi" type="checkbox" />
+              <span><strong>Usar Amazon Creators API</strong><small>Ative somente quando sua conta estiver elegível.</small></span>
+            </label>
             <div class="import-status" id="importStatus" role="status"></div>
           </div>
 
@@ -64,6 +68,10 @@
 
           <form id="productForm">
             <input id="productId" type="hidden" />
+            <input id="productAsin" type="hidden" />
+            <input id="amazonUpdatedAt" type="hidden" />
+            <input id="importSource" type="hidden" />
+            <input id="availability" type="hidden" />
             <div class="field-grid">
               <label class="field field-wide">
                 <span>Nome do produto *</span>

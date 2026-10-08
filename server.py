@@ -18,6 +18,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import unquote, urlparse
 from urllib.request import Request, urlopen
 
+from amazon_api import AmazonAPIError, credentials_status, get_product as get_amazon_product, is_amazon_url
+
 
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data" / "products.json"
@@ -275,9 +277,21 @@ def store_from(product, markup, hostname):
     return clean_text(site_name or brand or hostname.removeprefix("www.").split(".")[0].title())
 
 
-def extract_product(raw_url):
+def extract_product(raw_url, use_amazon_api=False):
     if not is_public_url(raw_url):
         raise ValueError("Use um endereço público iniciado por http:// ou https://.")
+
+    amazon_warning = ""
+    if use_amazon_api and is_amazon_url(raw_url):
+        try:
+            return get_amazon_product(raw_url)
+        except AmazonAPIError as error:
+            if "elegibilidade" in str(error).lower():
+                raise ValueError(
+                    "As credenciais foram reconhecidas, mas a Amazon ainda não liberou esta conta para consultas "
+                    "na Creators API. Verifique a elegibilidade no painel de Associados e tente novamente após a liberação."
+                ) from None
+            amazon_warning = f"A Creators API não respondeu: {error}. Os dados abaixo vieram da página e precisam ser revisados."
 
     original_hostname = urlparse(raw_url).hostname or ""
     initial_user_agent = "facebookexternalhit/1.1" if original_hostname == "link.amazon" else USER_AGENT
@@ -366,7 +380,7 @@ def extract_product(raw_url):
         raise ValueError("Não foi possível identificar o produto nessa página.")
 
     preserved_url = raw_url if original_hostname in ("s.shopee.com.br", "link.amazon") else final_url
-    return {
+    result = {
         "name": name[:90],
         "description": description[:220],
         "image": image,
@@ -374,7 +388,11 @@ def extract_product(raw_url):
         "oldPrice": old_price,
         "store": store_from(product, markup, hostname),
         "url": preserved_url,
+        "importSource": "Página da loja",
     }
+    if amazon_warning:
+        result["importWarning"] = amazon_warning
+    return result
 
 
 class WiseOffHandler(SimpleHTTPRequestHandler):
@@ -416,6 +434,8 @@ class WiseOffHandler(SimpleHTTPRequestHandler):
             return
         if path == "/api/products":
             return self.send_json(200, [product_public(item) for item in load_products()])
+        if path == "/api/amazon-status":
+            return self.send_json(200, credentials_status())
         if path == "/robots.txt":
             return self.send_text(200, f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\n")
         if path == "/sitemap.xml":
@@ -443,7 +463,10 @@ class WiseOffHandler(SimpleHTTPRequestHandler):
                 raise ValueError("Requisição inválida.")
             payload = json.loads(self.rfile.read(length))
             if self.path == "/api/import-product":
-                product = extract_product(str(payload.get("url", "")).strip())
+                product = extract_product(
+                    str(payload.get("url", "")).strip(),
+                    use_amazon_api=payload.get("useAmazonApi") is True,
+                )
                 return self.send_json(200, product)
             if self.path == "/api/products":
                 required = ("name", "description", "image", "price", "oldPrice", "category", "store", "url")
