@@ -91,7 +91,7 @@ function renderFeaturedProduct() {
   const image = document.querySelector("#featuredImage");
   image.src = product.image;
   image.alt = product.name;
-  document.querySelector("#featuredName").textContent = product.name;
+  document.querySelector("#heroTitle").textContent = product.name;
   document.querySelector("#featuredPrice").textContent = money.format(product.price);
   document.querySelector("#featuredInstallment").textContent = product.installment || "Consulte as condições";
   const link = document.querySelector("#featuredLink");
