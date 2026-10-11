@@ -1,5 +1,5 @@
 const state = {
-  category: "Todos",
+  category: document.body.dataset.category || "Todos",
   query: "",
   sort: "recent",
   favoritesOnly: false,
@@ -30,7 +30,8 @@ function keepOnlyLatestProductOnce() {
 function getProducts() {
   try {
     const customProducts = JSON.parse(localStorage.getItem("wiseoff-products") || "[]");
-    return [...customProducts, ...PRODUCTS];
+    if (PRODUCTS.length) return PRODUCTS;
+    return customProducts;
   } catch {
     return PRODUCTS;
   }
@@ -39,7 +40,7 @@ function getProducts() {
 async function syncProductsFromServer() {
   try {
     const isLocal = ["127.0.0.1", "localhost"].includes(location.hostname);
-    let response = await fetch(isLocal ? "/api/products" : "data/products.json", { headers: { Accept: "application/json" } });
+    let response = await fetch(isLocal ? "/api/products" : localPageUrl("/data/products.json"), { headers: { Accept: "application/json" } });
     if (!response.ok) return;
     let products = await response.json();
     const localProducts = getProducts();
@@ -57,7 +58,7 @@ async function syncProductsFromServer() {
     renderFeaturedProduct();
     renderCategories();
     renderProducts();
-    renderProductSchema(products);
+    renderProductSchema(visibleProducts());
   } catch {
     // Mantém a versão salva no navegador quando o servidor estiver indisponível.
   }
@@ -187,9 +188,9 @@ function renderProducts() {
 function renderCategories() {
   const categories = ["Todos", ...new Set(getProducts().map((product) => product.category))];
   categoryList.innerHTML = categories.map((category) => `
-    <button type="button" class="category-button ${category === state.category ? "active" : ""}" data-category="${category}">
+    <a href="${localPageUrl(category === "Todos" ? "/#ofertas" : `/categoria/${category.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}/`)}" class="category-button ${category === state.category ? "active" : ""}" data-category="${category}">
       ${category === "Todos" ? '<svg><use href="#icon-tag" /></svg>' : ""}${category}
-    </button>`).join("");
+    </a>`).join("");
 }
 
 function resetFilters() {
@@ -204,6 +205,7 @@ function resetFilters() {
 categoryList.addEventListener("click", (event) => {
   const button = event.target.closest("[data-category]");
   if (!button) return;
+  event.preventDefault();
   state.category = button.dataset.category;
   renderCategories();
   renderProducts();
@@ -261,5 +263,5 @@ if (initialQuery) {
 }
 renderCategories();
 renderProducts();
-renderProductSchema(getProducts());
+renderProductSchema(visibleProducts());
 syncProductsFromServer();

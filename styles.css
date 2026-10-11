@@ -99,7 +99,7 @@ svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width:
 .results-meta b { color: var(--ink); }
 .filters { margin: 30px 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .category-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.category-button { min-height: 38px; padding: 0 17px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 30px; color: #53615b; background: white; cursor: pointer; font-size: 12px; font-weight: 600; transition: .2s; }
+.category-button { min-height: 38px; padding: 0 17px; display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 30px; color: #53615b; background: white; cursor: pointer; font-size: 12px; font-weight: 600; text-decoration: none; transition: .2s; }
 .category-button svg { width: 15px; }
 .category-button:hover { border-color: var(--green-500); color: var(--green-700); }
 .category-button.active { border-color: var(--green-700); color: white; background: var(--green-700); box-shadow: 0 7px 18px rgba(8,122,75,.18); }

@@ -54,15 +54,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
     <script src="/consent-init.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1172426297315390" crossorigin="anonymous"></script>
     <script src="/analytics.js" defer></script>
   </head>
-  <body>
+  <body data-category="Todos">
     <header class="site-header">
       <div class="shell nav-wrap">
-        <a class="brand" href="#" aria-label="WiseOff, página inicial">
+        <a class="brand" href="/" aria-label="WiseOff, página inicial">
           <span>Wise<span>Off</span></span>
           <small>Escolha esperta.<br />Preço melhor.</small>
         </a>
@@ -134,7 +134,7 @@
         </div>
 
         <div class="filters" id="categorias">
-          <div class="category-list" id="categoryList" aria-label="Filtrar por categoria"></div>
+          <div class="category-list" id="categoryList" aria-label="Filtrar por categoria"><!-- STATIC_CATEGORIES --></div>
           <label class="sort-control">
             <span>Ordenar por</span>
             <select id="sortSelect">
@@ -146,7 +146,7 @@
           </label>
         </div>
 
-        <div class="product-list" id="productList" aria-live="polite" itemscope itemtype="https://schema.org/ItemList"></div>
+        <div class="product-list" id="productList" aria-live="polite" itemscope itemtype="https://schema.org/ItemList"><!-- STATIC_PRODUCTS --></div>
         <div class="empty-state" id="emptyState" hidden>
           <svg><use href="#icon-search" /></svg>
           <h3>Nenhuma oferta por aqui</h3>
@@ -173,7 +173,7 @@
 
     <footer>
       <div class="shell footer-wrap">
-        <a class="brand footer-brand" href="#"><span>Wise<span>Off</span></span></a>
+        <a class="brand footer-brand" href="/"><span>Wise<span>Off</span></span></a>
         <p>Boas escolhas para você gastar melhor.</p>
         <nav><a href="#ofertas">Ofertas</a><a href="mailto:contato@wisesolucoesti.com.br">Contato</a><a href="/privacidade.html">Privacidade</a></nav>
         <small>© 2026 WiseOff</small>
@@ -196,8 +196,8 @@
       <symbol id="icon-tag" viewBox="0 0 24 24"><path d="M20 13 13 20l-9-9V4h7l9 9Z"/><circle cx="8.5" cy="8.5" r="1"/></symbol>
     </svg>
 
-    <script src="products.js"></script>
-    <script src="app.js"></script>
-    <script src="sharing.js"></script>
+    <script src="/products.js"></script>
+    <script src="/app.js"></script>
+    <script src="/sharing.js"></script>
   </body>
 </html>

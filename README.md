@@ -33,7 +33,7 @@ Os dados importados guardam o ASIN, a origem e a data da consulta. Preços e dis
 
 ## Publicação no GitHub Pages
 
-A publicação é estática. O script abaixo gera em `public/` a página inicial, o catálogo JSON, páginas individuais de produtos, sitemap, robots.txt, dados estruturados e o arquivo de domínio:
+A publicação é estática. O script abaixo gera em `public/` a página inicial com os cards já presentes no HTML, o catálogo JSON, páginas de categorias, páginas individuais de produtos, sitemap, robots.txt, dados estruturados e o arquivo de domínio:
 
 ```bash
 python3 build_static.py
@@ -59,6 +59,8 @@ Na lista **Ofertas adicionadas**, use **Destacar**. O campo `featured` do produt
 A geração estática inclui:
 
 - URLs individuais em `/produto/nome-do-produto-id/`;
+- páginas indexáveis em `/categoria/nome-da-categoria/`;
+- cards e links de produtos presentes no HTML inicial, sem depender de JavaScript para serem descobertos;
 - canonical, Open Graph e Twitter Cards;
 - dados estruturados `Product`, `Offer`, `BreadcrumbList`, `Organization`, `WebSite` e `ItemList`;
 - `robots.txt` e `sitemap.xml`;

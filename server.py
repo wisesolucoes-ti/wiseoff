@@ -58,6 +58,10 @@ def product_slug(product):
     return f"{slugify(product.get('name', 'oferta'))}-{product.get('id')}"
 
 
+def category_url(category):
+    return f"/categoria/{slugify(category)}/"
+
+
 def product_public(product):
     result = dict(product)
     result["slug"] = product_slug(product)
@@ -111,7 +115,7 @@ def product_page(product):
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "Início", "item": f"{SITE_URL}/"},
-                    {"@type": "ListItem", "position": 2, "name": category or "Ofertas", "item": f"{SITE_URL}/#ofertas"},
+                    {"@type": "ListItem", "position": 2, "name": category or "Ofertas", "item": f"{SITE_URL}{category_url(item.get('category'))}"},
                     {"@type": "ListItem", "position": 3, "name": item.get("name"), "item": canonical},
                 ],
             },
@@ -144,7 +148,7 @@ def product_page(product):
 </head><body class="detail-page">
 <header class="site-header"><div class="shell nav-wrap admin-nav"><a class="brand" href="/"><span>Wise<span>Off</span></span><small>Escolha esperta.<br>Preço melhor.</small></a><a class="back-link" href="/#ofertas">← Todas as ofertas</a></div></header>
 <main class="detail-main shell">
-<nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="/">Início</a><span>›</span><a href="/#ofertas">{category or 'Ofertas'}</a><span>›</span><span>{name}</span></nav>
+<nav class="breadcrumbs" aria-label="Navegação estrutural"><a href="/">Início</a><span>›</span><a href="{category_url(item.get('category'))}">{category or 'Ofertas'}</a><span>›</span><span>{name}</span></nav>
 <article class="detail-card">
 <div class="detail-media"><img src="{image}" alt="{name}" width="720" height="720">{discount_badge}</div>
 <div class="detail-copy"><span class="category-pill">{category}</span><h1>{name}</h1><p>{description}</p><div class="detail-store">Oferta encontrada na <strong>{store}</strong></div>
