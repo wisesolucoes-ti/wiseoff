@@ -1,23 +1,13 @@
 (() => {
   const measurementId = "G-TVE4FBLPDQ";
-  const consentKey = "wiseoff-analytics-consent";
+  const consentKey = "wiseoff-consent-v2";
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
 
-  let savedConsent = "";
-  let analyticsAllowed = false;
+  let consent = window.wiseoffConsent || { analytics: "denied", ads: "denied", decided: false };
+  let analyticsAllowed = consent.analytics === "granted";
   let googleTagLoaded = false;
-  try { savedConsent = localStorage.getItem(consentKey) || ""; } catch { /* armazenamento indisponível */ }
-  analyticsAllowed = savedConsent === "granted";
-
-  window.gtag("consent", "default", {
-    analytics_storage: analyticsAllowed ? "granted" : "denied",
-    ad_storage: "denied",
-    ad_user_data: "denied",
-    ad_personalization: "denied",
-    wait_for_update: 500
-  });
 
   function loadGoogleTag() {
     if (googleTagLoaded || !analyticsAllowed) return;
@@ -30,21 +20,36 @@
     window.gtag("config", measurementId);
   }
 
-  function saveConsent(value) {
-    analyticsAllowed = value === "granted";
-    window.gtag("consent", "update", { analytics_storage: value });
-    try { localStorage.setItem(consentKey, value); } catch { /* armazenamento indisponível */ }
+  function saveConsent(choice) {
+    const choices = {
+      necessary: { analytics: "denied", ads: "denied" },
+      analytics: { analytics: "granted", ads: "denied" },
+      all: { analytics: "granted", ads: "granted" }
+    };
+    consent = { ...(choices[choice] || choices.necessary), decided: true };
+    window.wiseoffConsent = consent;
+    analyticsAllowed = consent.analytics === "granted";
+    window.gtag("consent", "update", {
+      analytics_storage: consent.analytics,
+      ad_storage: consent.ads,
+      ad_user_data: consent.ads,
+      ad_personalization: consent.ads
+    });
+    try {
+      localStorage.setItem(consentKey, JSON.stringify(consent));
+      localStorage.removeItem("wiseoff-analytics-consent");
+    } catch { /* armazenamento indisponível */ }
     document.querySelector("#analyticsConsent")?.remove();
     loadGoogleTag();
   }
 
   function showConsent() {
-    if (savedConsent) return;
+    if (consent.decided) return;
     const banner = document.createElement("aside");
     banner.id = "analyticsConsent";
     banner.className = "consent-banner";
     banner.setAttribute("aria-label", "Preferências de privacidade");
-    banner.innerHTML = `<p><strong>Privacidade na WiseOff</strong><span>Usamos métricas para melhorar as ofertas e a navegação. <a href="/privacidade.html">Saiba mais</a>.</span></p><div><button type="button" data-consent="denied">Recusar</button><button class="consent-accept" type="button" data-consent="granted">Aceitar métricas</button></div>`;
+    banner.innerHTML = `<p><strong>Privacidade na WiseOff</strong><span>Usamos métricas e publicidade para manter e melhorar o site. Você pode escolher o que autoriza. <a href="/privacidade.html">Saiba mais</a>.</span></p><div><button type="button" data-consent="necessary">Somente necessários</button><button type="button" data-consent="analytics">Só métricas</button><button class="consent-accept" type="button" data-consent="all">Aceitar tudo</button></div>`;
     banner.addEventListener("click", (event) => {
       const button = event.target.closest("[data-consent]");
       if (button) saveConsent(button.dataset.consent);
@@ -56,10 +61,18 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     showConsent();
-    document.querySelector("#resetAnalyticsConsent")?.addEventListener("click", () => {
+    document.querySelector("#resetConsent")?.addEventListener("click", () => {
       analyticsAllowed = false;
-      window.gtag("consent", "update", { analytics_storage: "denied" });
-      try { localStorage.removeItem(consentKey); } catch { /* armazenamento indisponível */ }
+      window.gtag("consent", "update", {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied"
+      });
+      try {
+        localStorage.removeItem(consentKey);
+        localStorage.removeItem("wiseoff-analytics-consent");
+      } catch { /* armazenamento indisponível */ }
       window.location.reload();
     });
     document.addEventListener("click", (event) => {

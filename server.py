@@ -140,7 +140,7 @@ def product_page(product):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{seo_title} em oferta | WiseOff"><meta name="twitter:description" content="{seo_description}"><meta name="twitter:image" content="{image}">
 <title>{seo_title} em oferta | WiseOff</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/styles.css"><script src="/analytics.js" defer></script><script src="/sharing.js" defer></script><script type="application/ld+json">{structured_json}</script>
+<link rel="stylesheet" href="/styles.css"><script src="/consent-init.js"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1172426297315390" crossorigin="anonymous"></script><script src="/analytics.js" defer></script><script src="/sharing.js" defer></script><script type="application/ld+json">{structured_json}</script>
 </head><body class="detail-page">
 <header class="site-header"><div class="shell nav-wrap admin-nav"><a class="brand" href="/"><span>Wise<span>Off</span></span><small>Escolha esperta.<br>Preço melhor.</small></a><a class="back-link" href="/#ofertas">← Todas as ofertas</a></div></header>
 <main class="detail-main shell">

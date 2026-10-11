@@ -65,3 +65,14 @@ A geração estática inclui:
 - títulos e descrições próprios para cada oferta.
 
 Após conectar `wiseoff.com.br`, envie `https://wiseoff.com.br/sitemap.xml` ao Google Search Console e ao Bing Webmaster Tools.
+
+## Google AdSense
+
+O código do editor `ca-pub-1172426297315390` é incluído na página inicial, na política de privacidade e em todas as páginas de produtos geradas. O arquivo `ads.txt` é publicado na raiz do domínio. Métricas e publicidade começam negadas no Modo de Consentimento do Google; o visitante pode aceitar somente métricas, aceitar tudo ou manter apenas os recursos necessários.
+
+Depois de publicar, confirme no AdSense:
+
+1. `wiseoff.com.br` está adicionado em **Sites**;
+2. `https://wiseoff.com.br/ads.txt` está acessível;
+3. a verificação do site foi solicitada;
+4. os formatos desejados foram ativados em **Anúncios > Por site**.
