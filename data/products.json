@@ -1,5 +1,64 @@
 [
   {
+    "id": 1793886926646,
+    "name": "Pilha Alcalina AA com 16 Unidades, Elgin, Alcalina, 1.5V",
+    "description": "Embalagem com 16 pilhas alcalinas tipo AA, Alta Durabilidade na Carga, Composição livre de metais pesados que são prejudiciais à saúde, Aprovadas por laboratórios credenciados pelo INMETRO.",
+    "image": "https://m.media-amazon.com/images/I/41yP4KTXs2L._SR600%2c315_PIWhiteStrip.jpg",
+    "price": 20.78,
+    "oldPrice": 55.9,
+    "category": "Casa",
+    "store": "Amzlinks",
+    "storeClass": "amzlinks",
+    "url": "https://link.amazon/B03OrDGIZ",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-11-05T13:55:26.646Z",
+    "asin": "",
+    "amazonUpdatedAt": "",
+    "importSource": "Página da loja",
+    "availability": ""
+  },
+  {
+    "id": 1793886603474,
+    "name": "Stanley Copo Térmico Stacking Coastal Teal 354ml",
+    "description": "Desenvolvida para preparar e consumir a bebida gelada com praticidade. Compacta e funcional, é ideal para usar em casa, no trabalho, encontros e atividades diversas.",
+    "image": "https://m.media-amazon.com/images/I/51oPU+jhmLL._AC_UF894,1000_QL80_.jpg",
+    "price": 67.5,
+    "oldPrice": 109,
+    "category": "Casa",
+    "store": "Amazon",
+    "storeClass": "amazon",
+    "url": "https://link.amazon/B0e7zjtps",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-11-05T13:50:03.474Z",
+    "asin": "",
+    "amazonUpdatedAt": "",
+    "importSource": "Página da loja",
+    "availability": "",
+    "featured": true
+  },
+  {
+    "id": 1793886451284,
+    "name": "Whisky Johnnie Walker Red Label, 1L",
+    "description": "Destilado alcoólico de malte envelhecido e destilado alcoólico de cereais não malteados, água desmineralizada e corante caramelo I.",
+    "image": "https://m.media-amazon.com/images/I/314jrRYu1mL._SR600%2c315_PIWhiteStrip.jpg",
+    "price": 69.9,
+    "oldPrice": 115,
+    "category": "Alimentos e Bebidas",
+    "store": "Amzlinks",
+    "storeClass": "amzlinks",
+    "url": "https://link.amazon/B04SCwYgP",
+    "badge": "Oferta verificada",
+    "installment": "Consulte as condições na loja",
+    "publishedAt": "2026-11-05T13:47:31.284Z",
+    "asin": "",
+    "amazonUpdatedAt": "",
+    "importSource": "Página da loja",
+    "availability": "",
+    "featured": false
+  },
+  {
     "id": 1793709201901,
     "name": "Fechadura Digital de Sobrepor, Abertura por senha ou tag, Pop, Prata, DS1100V, Elsys",
     "description": "Suporte até 200 senhas númericas; Mais segurança com trava dupla, travamento automático da porta; Abertura por senha ou TAG; Teclado touch luminoso c/Tecla Elsys",
@@ -16,7 +75,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793709008988,
@@ -35,7 +95,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793708935010,
@@ -54,7 +115,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793708862748,
@@ -73,7 +135,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793708745611,
@@ -92,7 +155,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793239933614,
@@ -111,7 +175,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793239770484,
@@ -130,7 +195,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793238505137,
@@ -149,7 +215,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793237008231,
@@ -168,7 +235,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1793236757076,
@@ -187,7 +255,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792547842464,
@@ -206,7 +275,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792546896803,
@@ -225,7 +295,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792546822152,
@@ -244,7 +315,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792458286756,
@@ -263,7 +335,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792457064453,
@@ -282,7 +355,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792456370191,
@@ -301,7 +375,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792456059267,
@@ -320,7 +395,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792067815190,
@@ -339,7 +415,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1792065094870,
@@ -358,7 +435,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791852915794,
@@ -377,7 +455,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791852694366,
@@ -396,7 +475,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791683721585,
@@ -415,7 +495,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791682005638,
@@ -434,7 +515,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791681767044,
@@ -453,7 +535,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791680836626,
@@ -472,7 +555,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791593592065,
@@ -491,7 +575,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791593461495,
@@ -510,7 +595,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791590428429,
@@ -529,7 +615,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791565547680,
@@ -548,7 +635,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791564588375,
@@ -567,7 +655,8 @@
     "asin": "",
     "amazonUpdatedAt": "",
     "importSource": "Página da loja",
-    "availability": ""
+    "availability": "",
+    "featured": false
   },
   {
     "id": 1791461421881,
@@ -582,7 +671,8 @@
     "url": "https://link.amazon/B02aUmk8L",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-08T12:10:21.881Z"
+    "publishedAt": "2026-10-08T12:10:21.881Z",
+    "featured": false
   },
   {
     "id": 1791460942017,
@@ -597,7 +687,8 @@
     "url": "https://link.amazon/B0efAgw2t",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-08T12:02:22.017Z"
+    "publishedAt": "2026-10-08T12:02:22.017Z",
+    "featured": false
   },
   {
     "id": 1791459602227,
@@ -612,7 +703,8 @@
     "url": "https://link.amazon/B06RM1qnB",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-08T11:40:02.227Z"
+    "publishedAt": "2026-10-08T11:40:02.227Z",
+    "featured": false
   },
   {
     "id": 1791390661844,
@@ -627,7 +719,8 @@
     "url": "https://link.amazon/B07TcxoUk",
     "badge": "15% ao finalizar a compra para membros PRIME",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-07T16:31:01.845Z"
+    "publishedAt": "2026-10-07T16:31:01.845Z",
+    "featured": false
   },
   {
     "id": 1791390405886,
@@ -642,7 +735,8 @@
     "url": "https://link.amazon/B0dfsVA3e",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-07T16:26:45.887Z"
+    "publishedAt": "2026-10-07T16:26:45.887Z",
+    "featured": false
   },
   {
     "id": 1791337539673,
@@ -657,7 +751,8 @@
     "url": "https://link.amazon/B0iTWTBqZ",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-07T01:45:39.673Z"
+    "publishedAt": "2026-10-07T01:45:39.673Z",
+    "featured": false
   },
   {
     "id": 1791337355185,
@@ -672,7 +767,8 @@
     "url": "https://link.amazon/B07PzQUux",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-07T01:42:35.186Z"
+    "publishedAt": "2026-10-07T01:42:35.186Z",
+    "featured": false
   },
   {
     "id": 1791337313550,
@@ -687,7 +783,8 @@
     "url": "https://link.amazon/B0588TL6m",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-07T01:41:53.551Z"
+    "publishedAt": "2026-10-07T01:41:53.551Z",
+    "featured": false
   },
   {
     "id": 1791291664797,
@@ -702,7 +799,8 @@
     "url": "https://link.amazon/B08tH4IpQ",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-06T13:01:04.797Z"
+    "publishedAt": "2026-10-06T13:01:04.797Z",
+    "featured": false
   },
   {
     "id": 1791290740649,
@@ -717,7 +815,8 @@
     "url": "https://link.amazon/B0gFuZW0k",
     "badge": "Apenas Membros Amazon Prime",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-06T12:45:40.649Z"
+    "publishedAt": "2026-10-06T12:45:40.649Z",
+    "featured": false
   },
   {
     "id": 1791253363770,
@@ -732,7 +831,8 @@
     "url": "https://link.amazon/B00HR59Bo",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-06T02:22:43.770Z"
+    "publishedAt": "2026-10-06T02:22:43.770Z",
+    "featured": false
   },
   {
     "id": 1791253306543,
@@ -747,7 +847,8 @@
     "url": "https://link.amazon/B0ha1VaIf",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-06T02:21:46.543Z"
+    "publishedAt": "2026-10-06T02:21:46.543Z",
+    "featured": false
   },
   {
     "id": 1791253238462,
@@ -762,7 +863,8 @@
     "url": "https://link.amazon/B06qdvDII",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-06T02:20:38.462Z"
+    "publishedAt": "2026-10-06T02:20:38.462Z",
+    "featured": false
   },
   {
     "id": 1791222035021,
@@ -777,7 +879,8 @@
     "url": "https://link.amazon/B04AqPcar",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-05T17:40:35.021Z"
+    "publishedAt": "2026-10-05T17:40:35.021Z",
+    "featured": false
   },
   {
     "id": 1791220721820,
@@ -792,7 +895,8 @@
     "url": "https://link.amazon/B0bIDhITL",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-05T17:18:41.820Z"
+    "publishedAt": "2026-10-05T17:18:41.820Z",
+    "featured": false
   },
   {
     "id": 1791219599469,
@@ -807,7 +911,8 @@
     "url": "https://link.amazon/B0gvpK1jr",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-05T16:59:59.469Z"
+    "publishedAt": "2026-10-05T16:59:59.469Z",
+    "featured": false
   },
   {
     "id": 1791219487596,
@@ -822,7 +927,8 @@
     "url": "https://link.amazon/B092xBlPu",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-05T16:58:07.596Z"
+    "publishedAt": "2026-10-05T16:58:07.596Z",
+    "featured": false
   },
   {
     "id": 1790991393379,
@@ -837,7 +943,8 @@
     "url": "https://link.amazon/B0cuV3Px3",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T01:36:33.379Z"
+    "publishedAt": "2026-10-03T01:36:33.379Z",
+    "featured": false
   },
   {
     "id": 1790990921439,
@@ -852,7 +959,8 @@
     "url": "https://link.amazon/B0h5t4jhF",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T01:28:41.439Z"
+    "publishedAt": "2026-10-03T01:28:41.439Z",
+    "featured": false
   },
   {
     "id": 1790990573866,
@@ -867,7 +975,8 @@
     "url": "https://link.amazon/B0eDgBEEG",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T01:22:53.866Z"
+    "publishedAt": "2026-10-03T01:22:53.866Z",
+    "featured": false
   },
   {
     "id": 1790990481085,
@@ -882,7 +991,8 @@
     "url": "https://link.amazon/B0eYcRjkU",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T01:21:21.086Z"
+    "publishedAt": "2026-10-03T01:21:21.086Z",
+    "featured": false
   },
   {
     "id": 1790989165769,
@@ -897,7 +1007,8 @@
     "url": "https://link.amazon/B0cz7xjFK",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T00:59:25.769Z"
+    "publishedAt": "2026-10-03T00:59:25.769Z",
+    "featured": false
   },
   {
     "id": 1790989050147,
@@ -912,7 +1023,8 @@
     "url": "https://link.amazon/B0cHkd6YP",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-03T00:57:30.147Z"
+    "publishedAt": "2026-10-03T00:57:30.147Z",
+    "featured": false
   },
   {
     "id": 1790876166593,
@@ -927,7 +1039,8 @@
     "url": "https://link.amazon/B0hkjulZw",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-01T17:36:06.593Z"
+    "publishedAt": "2026-10-01T17:36:06.593Z",
+    "featured": false
   },
   {
     "id": 1790875876122,
@@ -942,7 +1055,8 @@
     "url": "https://link.amazon/B01BiaVqs",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-01T17:31:16.122Z"
+    "publishedAt": "2026-10-01T17:31:16.122Z",
+    "featured": false
   },
   {
     "id": 1790875131122,
@@ -957,7 +1071,8 @@
     "url": "https://link.amazon/B02C9BBy7",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-01T17:18:51.122Z"
+    "publishedAt": "2026-10-01T17:18:51.122Z",
+    "featured": false
   },
   {
     "id": 1790874942875,
@@ -972,7 +1087,8 @@
     "url": "https://link.amazon/B09CfTucv",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-10-01T17:15:42.875Z"
+    "publishedAt": "2026-10-01T17:15:42.875Z",
+    "featured": false
   },
   {
     "id": 1790772607979,
@@ -987,7 +1103,8 @@
     "url": "https://link.amazon/B0drMeRKw",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-30T12:50:07.979Z"
+    "publishedAt": "2026-09-30T12:50:07.979Z",
+    "featured": false
   },
   {
     "id": 1790772387871,
@@ -1002,7 +1119,8 @@
     "url": "https://link.amazon/B0daw3Fzq",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-30T12:46:27.871Z"
+    "publishedAt": "2026-09-30T12:46:27.871Z",
+    "featured": false
   },
   {
     "id": 1790771800557,
@@ -1017,7 +1135,8 @@
     "url": "https://link.amazon/B00MNiZqZ",
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
-    "publishedAt": "2026-09-30T12:36:40.557Z"
+    "publishedAt": "2026-09-30T12:36:40.557Z",
+    "featured": false
   },
   {
     "id": 1790771502653,
@@ -1033,7 +1152,7 @@
     "badge": "Oferta verificada",
     "installment": "Consulte as condições na loja",
     "publishedAt": "2026-09-30T12:31:42.653Z",
-    "featured": true
+    "featured": false
   },
   {
     "id": 1790640614647,
